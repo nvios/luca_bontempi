@@ -10,8 +10,8 @@
 
 	<style>
       html,body {cursor: pointer; margin: 0px; height: 100%; background-color: rgb(36, 36, 36); overflow: hidden;}
-      h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white}
-      h2 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px; color: rgb(214, 214, 214)}
+      h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white; text-shadow: 1px 1px 2px black}
+      h2 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px; color: rgb(214, 214, 214); text-shadow: 1px 1px 2px black}}
       h2:hover { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: rgb(214, 214, 214)}
       canvas { width: 100%; height: 100% }
 		.loader { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: -1; }
@@ -28,7 +28,8 @@
         </div> 
 		<script src="3js/three.js"></script>
 		<script src="3js/renderers/Projector.js"></script>
-		<script src="3js/renderers/CanvasRenderer.js"></script>
+        <script src="3js/renderers/CanvasRenderer.js"></script>
+        <script src="3js/libs/stats.min.js"></script>
         <script>
             function goto(){
                 location.href = "main.html"
@@ -54,7 +55,7 @@
                 container = document.createElement( 'div' );
                 document.body.appendChild( container );
 
-                camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+                camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 20000 );
                 camera.position.z = 1000;
 
                 scene = new THREE.Scene();
@@ -64,7 +65,7 @@
                 var PI2 = Math.PI * 2;
                 var material = new THREE.SpriteCanvasMaterial( {
 
-                    color: 0xffffff,
+                    color: 0x858585,
                     program: function ( context ) {
 
                         context.beginPath();
@@ -168,8 +169,8 @@
 
             function render() {
 
-                camera.position.x += ( mouseX - camera.position.x ) * .05;
-                camera.position.y += ( - mouseY - camera.position.y ) * .05;
+                camera.position.x += ( mouseX - camera.position.x ) * .09;
+                camera.position.y += ( - mouseY - camera.position.y ) * .09;
                 camera.lookAt( scene.position );
 
                 var i = 0;
