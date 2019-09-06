@@ -9,13 +9,13 @@
         
 
 	<style>
-      html,body {cursor: pointer; margin: 0px; height: 100%; background-color: rgb(36, 36, 36); overflow: hidden;}
-      h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 46px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white; text-shadow: 1px 1px 2px black}
-      h2 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px; color: rgb(214, 214, 214); text-shadow: 1px 1px 2px black}}
-      h2:hover { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: rgb(214, 214, 214)}
+      html,body { margin: 0px; height: 100%; background-color: rgb(36, 36, 36); overflow: hidden }
+      h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 46px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white; text-shadow: 1px 1px 2px black }
+      h2 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px; color: rgb(214, 214, 214); text-shadow: 1px 1px 2px black }
+      h2:hover { cursor: pointer; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: rgb(214, 214, 214) }
       canvas { width: 100%; height: 100% }
-		.loader { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: -1; }
-      #c1 { position: absolute; z-index: 0; width: 100vw; color: rgb(34, 33, 33); text-align: center; top: 25%; transform: translateY(-50%) }
+		.loader { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: -1 }
+      #c1 { position: absolute; z-index: 0; width: 100vw; color: rgb(34, 33, 33); text-align: center; top: 20%; transform: translateY(-50%) }
    </style>
 
 	</head>
@@ -43,7 +43,7 @@
 
             var particles, particle, count = 0;
 
-            var mouseX = 0, mouseY = -300;
+            var mouseX = 0, mouseY = - window.innerHeight * .6;
 
             var windowHalfX = window.innerWidth / 2;
             var windowHalfY = window.innerHeight / 2;
@@ -57,7 +57,7 @@
                 document.body.appendChild( container );
 
                 camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 20000 );
-                camera.position.z = 1000;
+                camera.position.z = 1200;
 
                 scene = new THREE.Scene();
 
@@ -170,8 +170,8 @@
 
             function render() {
 
-                camera.position.x += ( mouseX - camera.position.x ) * .09;
-                camera.position.y += ( - mouseY - camera.position.y ) * .09;
+                camera.position.x += ( mouseX - camera.position.x ) * .04;
+                camera.position.y += ( - mouseY - camera.position.y ) * .04;
                 camera.lookAt( scene.position );
 
                 var i = 0;
