@@ -10,12 +10,12 @@
 
 	<style>
       html,body {cursor: pointer; margin: 0px; height: 100%; background-color: rgb(36, 36, 36); overflow: hidden;}
-      h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white; text-shadow: 1px 1px 2px black}
+      h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 46px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: white; text-shadow: 1px 1px 2px black}
       h2 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px; color: rgb(214, 214, 214); text-shadow: 1px 1px 2px black}}
       h2:hover { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: rgb(214, 214, 214)}
       canvas { width: 100%; height: 100% }
 		.loader { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: -1; }
-      #c1 { position: absolute; z-index: 0; width: 100vw; color: rgb(34, 33, 33); text-align: center; top: 50%; transform: translateY(-50%) }
+      #c1 { position: absolute; z-index: 0; width: 100vw; color: rgb(34, 33, 33); text-align: center; top: 25%; transform: translateY(-50%) }
    </style>
 
 	</head>
@@ -23,8 +23,9 @@
       <body>
 		<div class='loader'></div>
 		<div id="c1" onclick="goto()">
-            <h1>Ahaha, nice try!</h1>
-            <h2>Seriously now, let's go back home.</h2>           
+            <h1>Please hold,</h1>
+            <h1>your request is being sent to /dev/null</h1>
+            <h2>Seriously now, click here go back home.</h2>           
         </div> 
 		<script src="3js/three.js"></script>
 		<script src="3js/renderers/Projector.js"></script>
@@ -42,7 +43,7 @@
 
             var particles, particle, count = 0;
 
-            var mouseX = 0, mouseY = 0;
+            var mouseX = 0, mouseY = -300;
 
             var windowHalfX = window.innerWidth / 2;
             var windowHalfY = window.innerHeight / 2;
