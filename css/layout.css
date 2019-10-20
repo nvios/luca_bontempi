@@ -331,43 +331,43 @@ ul#nav li.current a { color: #F06000; }
 }
 
 ._1_ {
-  	width: 60%;
+  	width: 95%;
   	-moz-animation: _1_ 2s ease;
   	-webkit-animation: _1_ 2s ease;
 }
 ._2_ {
-  	width: 55%;
+  	width: 75%;
   	-moz-animation: _2_ 2s ease;
   	-webkit-animation: _2_ 2s ease;
 }
 ._3_ {
-  	width: 50%;
+  	width: 60%;
   	-moz-animation: _3_ 2s ease;
   	-webkit-animation: _3_ 2s ease;
 }
 ._4_ {
-  	width: 90%;
+  	width: 85%;
   	-moz-animation: _4_ 2s ease;
   	-webkit-animation: _4_ 2s ease;
 }
 ._5_ {
-  	width: 80%;
+  	width: 90%;
   	-moz-animation: _5_ 2s ease;
   	-webkit-animation: _5_ 2s ease;
 }
 ._6_ {
-  	width: 50%;
+  	width: 85%;
   	-moz-animation: _6_ 2s ease;
   	-webkit-animation: _6_ 2s ease;
 }
 
 @-moz-keyframes _1_ {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 90%;  }
 }
 @-moz-keyframes _2_ {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 80%;  }
 }
 @-moz-keyframes _3_ {
   0%   { width: 0px;  }
@@ -388,27 +388,27 @@ ul#nav li.current a { color: #F06000; }
 
 @-webkit-keyframes _1_ {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 95%;  }
 }
 @-webkit-keyframes _2_ {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 75%;  }
 }
 @-webkit-keyframes _3_ {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes _4_ {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 85%;  }
 }
 @-webkit-keyframes _5_ {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 90%;  }
 }
 @-webkit-keyframes _6_ {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 85%;  }
 }
 
 /* ------------------------------------------------------------------ */
