@@ -1,0 +1,74 @@
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164006454-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-164006454-1');
+		</script>
+
+
+============================ INDEX
+
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164006454-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-164006454-1');
+		</script>
+		<title>Luca Bontempi</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Luca Bontempi" />
+		<meta name="description" content="Luca Bontempi | Chek out my Bio, Portfolio and latest Contributions" />
+		<meta name="google-site-verification" content="sTsZg2rm_AMuba8EQH_EkFseyPLbA6wIPOPuK-zWVrs" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="icon" type="image/png" href="favicon.ico">
+
+
+=========================== MAIN
+
+<html class="no-js" lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164006454-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-164006454-1');
+	</script>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>Luca Bontempi</title>
+	<meta name="author" content="Luca Bontempi" />
+	<meta name="description" content="Luca Bontempi | Developer, Data guy and definitely not a fan of professional labels. Chek out my Bio, Portfolio and latest Contributions" />
+	<meta name="google-site-verification" content="sTsZg2rm_AMuba8EQH_EkFseyPLbA6wIPOPuK-zWVrs" />
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" >
+
+</head>
