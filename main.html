@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164006454-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -264,17 +264,51 @@
 
       </div> <!-- End Work -->
 
-   </section> <!-- Resume Section End-->   
-
-   <!-- Portfolio Section
+   </section> <!-- Resume Section End-->  
+   
+      <!-- Highlight Section
    ================================================== -->
+
    <section id="portfolio" style="display : block">
 
       <div class="row">
 
          <div class="twelve columns collapsed">
 
-            <h1>Check Out Some of My Works.</h1>
+            <h1>Latest project</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-full s-bgrid-full cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-00" title="">
+                        <img alt="Luca Bontempi, Face Recognition" src="images/pixpad.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Pixpad Editor</h5>
+                               <p>Algorithms <b>|</b> Architecture</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+            </div> <!-- wrapper end -->
+
+         </div> <!-- twelve columns end -->  
+
+   <!-- Portfolio Section
+   ================================================== -->
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Other Works</h1>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -355,6 +389,35 @@
          <!-- Modal Popup
 	      --------------------------------------------------------------- -->
 
+         <div id="modal-00" class="popup-modal mfp-hide">
+
+		      <img alt="Luca Bontempi, Face Recognition" class="scale-with-grid" src="images/pixpad.png" alt="" />
+
+		      <div class="description-box">
+               <h4>Vanilla Javascript Image Quantizer and Editor</h4>
+               <a href="https://pixpad.github.io/playground/">
+                  <p style="text-decoration: underline;">Try it here!</p>
+               </a>
+			      <p>The project is a Javascript adaptation of a processing application that I previously wrote using Python Jinja and Flask. 
+                  This serverless implementation was a good playground to experient with frontend technologies and to introduce new algorithms
+                  into the workflow.
+               </p>
+               <p>   
+                  The editor features a Quantizer, taking care of the reduction of the colors of the uploaded image to a user-defined palette.
+                  A Flood Fill recursive algorithm allows to select different brush sizes in the editor and a "paint bucket" function. Finally, 
+                  to overcome the limitation of intermittent registration of the cursor location while in drawing mode, a custom implementaiton of Dijkstra's algorithm was used.
+                  This allowed to find the distance travelled by the cursor between subsequent mouse location events and draw a continuous path between them.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Algorithms, Visualization, Frontend Architecture</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/nvios/pixpad" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+         
          <div id="modal-01" class="popup-modal mfp-hide">
 
 		      <img alt="Luca Bontempi, Face Recognition" class="scale-with-grid" src="images/portfolio/modals/m-opencv.jpg" alt="" />

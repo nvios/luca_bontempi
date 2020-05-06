@@ -689,6 +689,8 @@ input[type="checkbox"] { display: inline; }
 .bgrid-quarters [class*="column"] { width: 25%; }
 .bgrid-thirds [class*="column"]   { width: 33.33333%; }
 .bgrid-halves [class*="column"]   { width: 50%; }
+.bgrid-full [class*="column"]     { width: 100%; text-align: center; }
+
 
 [class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: left; }
 
@@ -708,6 +710,7 @@ properly.
    .s-bgrid-quarters [class*="column"] { width: 25%; }
    .s-bgrid-thirds [class*="column"]   { width: 33.33333%; }
    .s-bgrid-halves [class*="column"]   { width: 50%; }
+   .s-bgrid-full [class*="column"]     { width: 100%; }
 
    /* block grids left clearing */
    .first { clear: none; }
@@ -750,11 +753,14 @@ properly.
    .row .offset-11   { margin-left: 0%; }
 }
 
+   .item-wrap { text-align: center; }
+
 /* mobile narrow
 --------------------------------------------------------------- */
 @media only screen and (max-width: 460px) {
 
    .row { width: auto; }
+   .item-wrap { text-align: center; }
 
 }
 
@@ -763,6 +769,7 @@ properly.
 @media screen and (min-width: 1200px) {
 
    .wide .row { max-width: 1180px; }
+   .item-wrap { text-align: center; }
 
 }
 
