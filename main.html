@@ -140,15 +140,15 @@
 
          <div class="twelve columns collapsed">
 
-            <h1>Latest project</h1>
+            <h1>Latest projects</h1>
 
             <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-full s-bgrid-full cf">
+            <div id="portfolio-wrapper" class="bgrid-halves s-bgrid-halves cf">
 
-          	   <div class="columns portfolio-item">
+          	   <div class="columns portfolio-item first">
                   <div class="item-wrap">
 
-                     <a href="#modal-00" title="">
+                     <a href="#modal-001" title="">
                         <img alt="Luca Bontempi. Pixpad" src="images/portfolio/pixpad.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
@@ -160,7 +160,24 @@
                      </a>
 
                   </div>
-          		</div> <!-- item end -->
+                </div> <!-- item end -->
+                
+               <div class="columns portfolio-item last">
+                  <div class="item-wrap">
+               
+                     <a href="#modal-002" title="">
+                        <img alt="Luca Bontempi. Pixpad" src="images/portfolio/obj-detect.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Webcam Image Detection</h5>
+                              <p>Computer Vision <b>|</b> Cloud Computing</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+               
+                  </div>
+               </div> <!-- item end -->
 
             </div> <!-- wrapper end -->
 
@@ -254,7 +271,7 @@
          <!-- Modal Popup
 	      --------------------------------------------------------------- -->
 
-         <div id="modal-00" class="popup-modal mfp-hide">
+         <div id="modal-001" class="popup-modal mfp-hide">
 
 		      <img alt="Nvios Pixpad Full" class="scale-with-grid" src="images/portfolio/modals/m-pixpad.png"/>
 
@@ -290,7 +307,42 @@
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
-	      </div><!-- modal-01 End -->
+         </div><!-- modal-001 End -->
+         
+         <div id="modal-002" class="popup-modal mfp-hide">
+         
+            <img alt="Nvios Pixpad Full" class="scale-with-grid" src="images/portfolio/modals/m-obj-detect.jpg" />
+         
+            <div class="description-box">
+               <h4>Live Webcam Object Detection</h4>
+               <a href="https://luca-bontempi-object-detection.web.app/" target="_blank">
+                  <strong>Try it here!</strong>
+               </a>
+               <p>
+               This demo was develped using Tensorflow.js, Firebase and React as an experiment to
+               integrate a deep learning model and realtime database access into a frontend application.
+               </p>
+               <p>
+                  To ensure an optimal experience, please use the desktop version of the Google Chrome browser.
+               </p>
+               <p>
+                  This implementation is based on a training
+                  instance of the COCO dataset with over 80 labels (e.g. vehicles, animals and household objects). The experiment
+                  introduces several improvements over my
+                  previous <a href="https://github.com/nvios/facial_recognition" target="_blank" rel="noopener noreferrer"
+                     className="inline"><strong> computer vision project </strong></a> for
+                  real-time face recognition, written in Python and based on a Multi-task Cascaded Convolutional Neural Network
+                  (MTCNN).</p>
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Algorithms, Visualization, Frontend Architecture</span>
+            </div>
+         
+            <div class="link-box">
+               <a href="https://luca-bontempi-object-detection.web.app/" target="_blank">Details</a>
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+         
+         </div><!-- modal-002 End -->
          
          <div id="modal-01" class="popup-modal mfp-hide">
 
