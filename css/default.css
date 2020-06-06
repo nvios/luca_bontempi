@@ -146,10 +146,52 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
+   height: 100vh;
 	color: #838C95;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: #80808075;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim 1s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.9);
+    }
+}
+
+@keyframes clickAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: clickAnim .3s forwards;
+    border: 6px solid teal;
 }
 
 /*  2. Typography
