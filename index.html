@@ -29,18 +29,20 @@
 
 	</head>
 	<body>
-      <body>
-    <div class='loader'></div>
-	<div id="c1" onclick="goto()">
-            <h1>Luca Bontempi</h1>            
-        </div> 
+        <div onclick="goto()">
+            <div class='loader'></div>
+            <div id="c1">
+                    <h1>Luca Bontempi</h1>            
+            </div> 
+        </div>
+    </body>
     <script src="3js/three.js"></script>
     <script src="3js/renderers/Projector.js"></script>
     <script src="3js/renderers/CanvasRenderer.js"></script>
-      <script>
-      function goto(){
+    <script>
+        function goto(){
             location.href = "main.html"
-         }
+        }
          
          var mouseX = 0, mouseY = 0,
         
@@ -191,6 +193,5 @@
             renderer.render( scene, camera );
         
         }
-        </script>
-	</body>
+    </script>
 </html>
