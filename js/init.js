@@ -203,10 +203,10 @@ document.addEventListener('mousemove', e => {
 })
 
 document.addEventListener('click', () => {
-   cursor.classList.add("expand");
+   cursorOutline.classList.add("expand");
 
    setTimeout(() => {
-      cursor.classList.remove("expand");
+      cursorOutline.classList.remove("expand");
    }, 300)
 })
 

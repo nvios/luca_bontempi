@@ -169,13 +169,14 @@ body {
 .cursor-outline {
     width: 30px;
     height: 30px;
-    background-color: #ffffff3a;
+    background-color: #ffffff44;
     border-radius: 50%;
     position: absolute;
     z-index: 1;
     transition-duration: 300ms;
     transition-timing-function: ease-out;
-    animation: cursorAnim 1s infinite alternate;
+    transform-origin: center;
+    animation: cursorAnim .8s infinite alternate;
     pointer-events: none;
     backdrop-filter: invert(90%);
 }
@@ -185,7 +186,7 @@ body {
         transform: scale(1);
     }
     to {
-        transform: scale(.9);
+        transform: scale(1.2);
     }
 }
 
@@ -204,7 +205,7 @@ body {
 
 .expand {
     animation: clickAnim .3s forwards;
-    border: 6px solid teal;
+    border: 8px solid teal;
 }
 
 /*  2. Typography
