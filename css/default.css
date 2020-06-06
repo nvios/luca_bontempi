@@ -156,8 +156,8 @@ body {
 .cursor {
     width: 30px;
     height: 30px;
-    border: 1px solid white;
-    background-color: #80808075;
+    border: 2px solid white;
+    background-color: #ffffff50;
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -165,6 +165,7 @@ body {
     transition-timing-function: ease-out;
     animation: cursorAnim 1s infinite alternate;
     pointer-events: none;
+    backdrop-filter: invert(90%);
 }
 
 @keyframes cursorAnim {
@@ -855,7 +856,7 @@ properly.
 	text-align: center !important;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .cursor {
     display: none;
   }

@@ -197,7 +197,7 @@ function openForm() {
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
-   cursor.setAttribute("style", "top: " + (e.pageY - 9) + "px; left: " + (e.pageX - 13) + "px;")
+   cursor.setAttribute("style", "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 12) + "px;")
 })
 
 document.addEventListener('click', () => {
