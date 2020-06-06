@@ -195,9 +195,11 @@ function openForm() {
 ------------------------------------------------------*/
 
 const cursor = document.querySelector('.cursor');
+const cursorOutline = document.querySelector('.cursor-outline');
 
 document.addEventListener('mousemove', e => {
-   cursor.setAttribute("style", "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 12) + "px;")
+   cursor.setAttribute("style", "top: " + (e.pageY + 4) + "px; left: " + (e.pageX - 1) + "px;")
+   cursorOutline.setAttribute("style", "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 12) + "px;")
 })
 
 document.addEventListener('click', () => {

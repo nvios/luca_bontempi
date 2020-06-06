@@ -142,6 +142,7 @@ html {
 
 body {
    background: #fff;
+   cursor: none;
    font-family: 'opensans-regular', sans-serif;
    font-weight: normal;
    font-size: 15px;
@@ -154,14 +155,25 @@ body {
 }
 
 .cursor {
-    width: 30px;
-    height: 30px;
-    border: 2px solid white;
-    background-color: #ffffff50;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.445);
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    transition-duration: 400ms;
+    pointer-events: none;
+}
+
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff3a;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transition-duration: 300ms;
     transition-timing-function: ease-out;
     animation: cursorAnim 1s infinite alternate;
     pointer-events: none;
