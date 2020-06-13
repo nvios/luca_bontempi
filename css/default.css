@@ -173,7 +173,7 @@ body {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    transition-duration: 300ms;
+    transition-duration: 450ms;
     transition-timing-function: ease-out;
     transform-origin: center;
     animation: cursorAnim .8s infinite alternate;
