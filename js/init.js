@@ -139,8 +139,8 @@ function openForm() {
       controlNav: true,
       directionNav: false,
       smoothHeight: true,
-      slideshowSpeed: 7000,
-      animationSpeed: 600,
+      slideshowSpeed: 12000,
+      animationSpeed: 800,
       randomize: false,
    });
 
